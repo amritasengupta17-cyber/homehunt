@@ -1,0 +1,19 @@
+:root{--bg:#f4f6f8;--card:#fff;--ink:#16202c;--mute:#5d6b7a;--line:#dde3ea;--acc:#1d4ed8;--ok:#15803d;--bad:#b91c1c}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--acc)}main{max-width:900px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.8rem;margin:.2em 0 .3em;letter-spacing:-.02em}h2{font-size:1.1rem;margin:0}
+.btn{display:inline-block;background:var(--acc);color:#fff;border:0;border-radius:8px;padding:10px 16px;font:inherit;font-weight:600;cursor:pointer;text-decoration:none}
+.btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.mute{color:var(--mute);font-size:.9rem}.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+code,.mono{font-family:ui-monospace,Menlo,monospace;font-size:.85rem;word-break:break-all;background:#eef1f5;padding:2px 6px;border-radius:4px}
+.l{display:grid;grid-template-columns:160px 1fr;gap:16px}
+.l img,.ph{width:160px;height:120px;object-fit:cover;border-radius:8px;background:#e6ebf1}
+.f{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin-top:8px}
+label{display:block;font-size:.75rem;color:var(--mute)}
+input,select,textarea{width:100%;font:inherit;padding:6px 8px;border:1px solid transparent;border-radius:6px;background:#f7f9fb}
+input:hover,select:hover,textarea:hover{border-color:var(--line)}input:focus,select:focus,textarea:focus{outline:2px solid var(--acc);background:#fff}
+.addr{font-weight:600;font-size:1.05rem}.pc{white-space:pre-line;font-size:.9rem}.pro{color:var(--ok)}.con{color:var(--bad)}
+.sc{font-weight:700;color:var(--acc)}.v{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;cursor:pointer;font:inherit}
+.v.on{background:var(--acc);color:#fff;border-color:var(--acc)}.cm{font-size:.88rem;border-top:1px solid var(--line);padding-top:6px;margin-top:6px}
+@media(max-width:600px){.l{grid-template-columns:1fr}.l img,.ph{width:100%;height:160px}}
